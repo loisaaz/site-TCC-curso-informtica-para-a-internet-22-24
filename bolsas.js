@@ -1,5 +1,5 @@
 let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideId = ["mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
 
@@ -17,3 +17,4 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+
