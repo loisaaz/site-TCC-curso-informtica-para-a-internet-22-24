@@ -59,7 +59,7 @@
 /*final do menu*/
 
 /*inicio do button*/
-a:link, a:visited {
+.button a:link, a:visited {
   background-color: #ffd6f5;
   color: white;
   padding: 14px 25px;
@@ -74,5 +74,15 @@ a:hover, a:active {
 }
 /*final do button*/
 
+/*inicio scrollbar*/
+div.scroll-container {
+  background-color: #fffffc;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
 
-
+div.scroll-container img {
+  padding: 10px;
+}
+/*final scrollbar*/
