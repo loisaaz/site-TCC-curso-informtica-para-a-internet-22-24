@@ -59,7 +59,7 @@
 /*final do menu*/
 
 /*inicio do button*/
-.button a:link, a:visited {
+/*.button a:link, a:visited {
   background-color: #ffd6f5;
   color: white;
   padding: 14px 25px;
@@ -71,7 +71,7 @@
 a:hover, a:active {
   background-color: white;
     color: #ffd6f5;
-}
+}*/
 /*final do button*/
 
 /*inicio scrollbar*/
