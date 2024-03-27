@@ -94,6 +94,7 @@ div.scroll-container img {
 
 .linhaintroducao {
   text-align: center;
+  
 }
 .small {
   text-align: center;
@@ -102,3 +103,17 @@ div.scroll-container img {
 .infocadastro {
   color: gray;
 }
+
+/*inicio descobrir*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*final descobrir*/
