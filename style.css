@@ -1,3 +1,8 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img {
     text-align: center;
     z-index: 9999; /* Garante que a imagem esteja na frente de outros elementos */
