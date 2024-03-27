@@ -63,21 +63,6 @@ main {
 }
 /*final do menu*/
 
-/*inicio do button*/
-/*.button a:link, a:visited {
-  background-color: #ffd6f5;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: white;
-    color: #ffd6f5;
-}*/
-/*final do button*/
 
 /*inicio scrollbar*/
 div.scroll-container {
