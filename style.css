@@ -1,6 +1,20 @@
 main {
   margin-left: auto;
   margin-right: auto;
+  /* Exemplo de media query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas pequenas */
+}
+
+/* Exemplo de media query para telas médias */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para telas médias */
+}
+
+/* Exemplo de media query para telas grandes */
+@media only screen and (min-width: 1025px) {
+  /* Estilos para telas grandes */
+}
 }
 
 .img {
