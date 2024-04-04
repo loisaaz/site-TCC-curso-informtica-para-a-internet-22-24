@@ -22,7 +22,7 @@ main {
     z-index: 9999; /* Garante que a imagem esteja na frente de outros elementos */
 }
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*inicio do menu*/
@@ -57,7 +57,7 @@ main {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .overlay .closebtn {
@@ -82,8 +82,12 @@ main {
 div.scroll-container {
   background-color: #fffffc;
   overflow: auto;
+  overflow-x: auto;
   white-space: nowrap;
   padding: 10px;
+  white-space: nowrap; /* Evita que o conteúdo quebre a linha */
+  text-align: center;
+  
 }
 
 div.scroll-container img {
@@ -118,49 +122,44 @@ a:hover {
 
 /*final descobrir*/
 
+  /* inicio div 50% e centralizada*/
 
-/*inicio overlay*/
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
+  /* Estilo para as divs principais */
+  .container {
+    display: flex; /* Ativa o flexbox para alinhar as divs */
+    height: 100vh; /* Altura total da tela */
+  }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+  .coluna {
+    width: 50%; /* Cada coluna ocupa 50% da largura da tela */
+    display: flex; /* Ativa o flexbox para alinhar a div centralizada */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro da div */
+    align-items: center; /* Centraliza verticalmente os itens dentro da div */
 
-.foto2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+  }
 
-}
+  /* Estilo para a div centralizada */
+  .centralizada {
+    width: 80%; /* Largura da div centralizada */
+    text-align: center; /* Alinha o texto centralizado */
+    padding: 20px; /* Espaçamento interno (opcional) */
+  }
+  
+  /* final div 50% e centralizada*/
 
-.container:hover .foto2 {
-  opacity: 1;
-}
+   /* inicio do vídeo */
 
-.icon {
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+  /* Estilo para centralizar o vídeo */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.fa-user:hover {
-  color: #eee;
-}
-/*final overlay*/
+   /* height: 100vh; /* Define a altura da tela inteira */
+  }
 
+  /* Estilo para o vídeo */
+  video {
+    max-width: 500%; /* O vídeo ocupará no máximo a largura disponível */
+    max-height: 500%; /* O vídeo ocupará no máximo a altura disponível */
+  }
