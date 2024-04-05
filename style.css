@@ -143,6 +143,7 @@ a:hover {
     width: 80%; /* Largura da div centralizada */
     text-align: center; /* Alinha o texto centralizado */
     padding: 20px; /* Espaçamento interno (opcional) */
+    justify-content: center;
   }
   
   /* final div 50% e centralizada*/
