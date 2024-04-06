@@ -164,27 +164,3 @@ a:hover {
     max-width: 500%; /* O vídeo ocupará no máximo a largura disponível */
     max-height: 500%; /* O vídeo ocupará no máximo a altura disponível */
   }
-
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: rgb(253, 248, 190);
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  .subnav:hover .subnav-content {
-    display: block;
-  }
