@@ -77,24 +77,6 @@ main {
 }
 /*final do menu*/
 
-
-/*inicio scrollbar*/
-div.scroll-container {
-  background-color: #fffffc;
-  overflow: auto;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
-  white-space: nowrap; /* Evita que o conteúdo quebre a linha */
-  text-align: center;
-  
-}
-
-div.scroll-container img {
-  padding: 10px;
-}
-/*final scrollbar*/
-
 .linhaintroducao {
   text-align: center;
   
@@ -171,3 +153,35 @@ a:hover {
   }
 
    /* final do vídeo */
+
+   .quadrado {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .imagem-base {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease /* Adiciona uma transição suave */
+  }
+
+  .imagem-overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Inicialmente, a imagem overlay não é visível */
+    transition: opacity 0.5s ease /* Adiciona uma transição suave */
+  }
+
+  .quadrado:hover .imagem-base {
+    opacity: 0; /* Ao passar o mouse sobre a div container, a imagem base fica invisível */
+  }
+
+  .quadrado:hover .imagem-overlay {
+    opacity: 1; /* Ao passar o mouse sobre a div container, a imagem overlay fica visível */
+  }
+
