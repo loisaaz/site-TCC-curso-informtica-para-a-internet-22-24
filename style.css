@@ -22,7 +22,7 @@ main {
     z-index: 9999; /* Garante que a imagem esteja na frente de outros elementos */
 }
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Helvetica;
 }
 
 /*inicio do menu*/
@@ -127,11 +127,12 @@ a:hover {
   /* Estilo para as divs principais */
   .container {
     display: flex; /* Ativa o flexbox para alinhar as divs */
+    flex-direction: row;
     height: 100vh; /* Altura total da tela */
   }
 
   .coluna {
-    width: 50%; /* Cada coluna ocupa 50% da largura da tela */
+    width: 100%; /* coluna ocupa 50% da tela */
     display: flex; /* Ativa o flexbox para alinhar a div centralizada */
     justify-content: center; /* Centraliza horizontalmente os itens dentro da div */
     align-items: center; /* Centraliza verticalmente os itens dentro da div */
@@ -141,12 +142,11 @@ a:hover {
   /* Estilo para a div centralizada */
   .centralizada {
     width: 80%; /* Largura da div centralizada */
-    text-align: center; /* Alinha o texto centralizado */
+    text-align: center;
     padding: 20px; /* Espaçamento interno (opcional) */
     justify-content: center;
   }
-  
-  /* final div 50% e centralizada*/
+
 
    /* inicio do vídeo */
 
@@ -155,8 +155,13 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-   /* height: 100vh; /* Define a altura da tela inteira */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Altera a direção do flexbox para coluna em telas menores */
+    }
+
   }
 
   /* Estilo para o vídeo */
@@ -164,3 +169,5 @@ a:hover {
     max-width: 500%; /* O vídeo ocupará no máximo a largura disponível */
     max-height: 500%; /* O vídeo ocupará no máximo a altura disponível */
   }
+
+   /* final do vídeo */
