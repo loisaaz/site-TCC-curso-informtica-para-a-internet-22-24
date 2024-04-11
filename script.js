@@ -13,3 +13,12 @@ function toggleSubmenu(event) {
   submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
 }
 /*final menu */
+
+/* DOM (cliques) */
+let count = 0;
+
+function incrementCount() {
+    count++;
+    document.getElementById("count-display").textContent = count;
+}
+/* DOM (cliques) */

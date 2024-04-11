@@ -1,6 +1,7 @@
 main {
   margin-left: auto;
   margin-right: auto;
+  
   /* Exemplo de media query para telas pequenas */
 @media only screen and (max-width: 600px) {
   /* Estilos para telas pequenas */
@@ -109,7 +110,6 @@ a:hover {
   /* Estilo para as divs principais */
   .container {
     display: flex; /* Ativa o flexbox para alinhar as divs */
-    flex-direction: row;
     height: 100vh; /* Altura total da tela */
   }
 
@@ -123,12 +123,15 @@ a:hover {
 
   /* Estilo para a div centralizada */
   .centralizada {
-    width: 80%; /* Largura da div centralizada */
+    width: 50%; /* Largura da div centralizada */
     text-align: center;
     padding: 20px; /* Espaçamento interno (opcional) */
-    justify-content: center;
+
   }
 
+  .imagee {
+    width: 6000%;
+  }
 
    /* inicio do vídeo */
 

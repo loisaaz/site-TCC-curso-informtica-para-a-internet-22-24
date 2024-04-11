@@ -1,3 +1,18 @@
+  /* Exemplo de media query para telas pequenas */
+  @media only screen and (max-width: 600px) {
+    /* Estilos para telas pequenas */
+  }
+  
+  /* Exemplo de media query para telas médias */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para telas médias */
+  }
+  
+  /* Exemplo de media query para telas grandes */
+  @media only screen and (min-width: 1025px) {
+    /* Estilos para telas grandes */
+  }
+
 /*
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -55,36 +70,38 @@
     opacity: 0.7;
   }
 
-/*inicio overlay*/
-.quadrado {
-  position: relative;
-  width: 80%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.imagem-base {
-  width: 80%;
-  height: auto;
-  display: block;
-  transition: opacity 0.5s ease /* Adiciona uma transição suave */
-}
-
-.imagem-overlay {
-  width: 80%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0; /* Inicialmente, a imagem overlay não é visível */
-  transition: opacity 0.5s ease /* Adiciona uma transição suave */
-}
-
-.quadrado:hover .imagem-base {
-  opacity: 0; /* Ao passar o mouse sobre a div container, a imagem base fica invisível */
-}
-
-.quadrado:hover .imagem-overlay {
-  opacity: 1; /* Ao passar o mouse sobre a div container, a imagem overlay fica visível */
-}
+  
+  /* Início overlay */
+  .quadrado {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }
+  
+  .imagem-base {
+    width: 80%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease /* Adiciona uma transição suave */
+  }
+  
+  .imagem-overlay {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Inicialmente, a imagem overlay não é visível */
+    transition: opacity 0.5s ease /* Adiciona uma transição suave */
+  }
+  
+  .quadrado:hover .imagem-base {
+    opacity: 0; /* Ao passar o mouse sobre a div container, a imagem base fica invisível */
+  }
+  
+  .quadrado:hover .imagem-overlay {
+    opacity: 1; /* Ao passar o mouse sobre a div container, a imagem overlay fica visível */
+  }
 
 /*final imagem overlay*/
