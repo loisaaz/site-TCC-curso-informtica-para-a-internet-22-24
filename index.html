@@ -13,18 +13,72 @@
       <div class="img">
         <img src="https://i.postimg.cc/6qZ2Tv1p/Black-and-White-Minimalist-Professional-Initial-Logo-1.png" width="220";/>
       </div>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="index.html">Home</a>
-          <a href="sobrenos.html">Sobre Nós</a>
-          <a href="lumierecouture.html">Linha Lumière Couture</a>
-          <a href="mulheres.html">Moda Feminina</a>
-          <!--<a href="joalheria.html">Joalheria</a>
-          <a href="bolsas.html">Bolsas</a> -->
+      <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">Mulheres</a>
+                    <ul class="submenu">
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Shorts e Calças</a></li>
+                        <li><a href="#">Bolsas</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Bolsas</a></li>
+                        <li><a href="#">Luvas</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><i class="fa-thin fa-magnifying-glass"></i></button>
+                
+            </div>
+            
+        </nav>
+    </header>
+      <!-- <div class="navbar">
+        <a href="index.html">Home</a>
+              <a href="sobrenos.html">Sobre Nós</a>
+            <a href="lumierecouture.html">Linha Lumière Couture</a>
+        <div class="subnav">
+          <button class="subnavbtn">Moda Feminina<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#">Camisas e Tops</a>
+            <a href="#">Saias</a>
+            <a href="#">Vestidos</a>
+            <a href="#">Shorts e Calças</a>
+            <a href="#">Vestidos</a>
+            <a href="#">Roupas de banho</a>
+          </div>
         </div>
-      </div>
-    <!-- parte do menu --><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <div class="subnav">
+          <button class="subnavbtn">Acessórios<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#">Jóias</a>
+            <a href="#">Bolsas</a>
+            <a href="#">Luvas</a>
+          </div>
+        </div> 
+       <div class="subnav">
+          <button class="subnavbtn">Sapatos<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#">Botas</a>
+            <a href="#">Sneakers</a>
+            <a href="#">Scarpins</a>
+          </div>
+        </div> -->
+        
+      
         <br>
         <br>
         <div class="video-container">
@@ -49,7 +103,7 @@
           <div class="centralizada">
             <h2>Coleção Lumiere Couture</h2>
             <p>Inspirada a moda dos anos 1900, trazendo a elegância e sofisticação da época para o presente.<br>Com vestimentas que destacam o feminino de forma encantadora, cada peça combina o charme vintage com um toque contemporâneo. <br>É uma expressão da beleza atemporal e do glamour clássico, perfeita para mulheres que apreciam um estilo refinado e sofisticado.</p>
-            <p><a href="lumierecouture.html">Descubra mais</a></p>
+            <p class="descobrir"><a href="lumierecouture.html">Descubra mais</a></p>
           </div>
         </div>
       </div>
@@ -63,7 +117,7 @@
             <h2>Coleção Verão 2024</h2>
             <p>Prepare-se para ser envolvido pela aura inebriante da Coleção de Verão 2024. 
             Descubra o prazer sublime de se vestir com peças que capturam a essência da elegância e da sofisticação, redefinindo o conceito de luxo discreto.</p>
-            <p><a href="mulheres.html">Descubra mais</a></p>
+            <p class="descobrir"><a href="mulheres.html">Descubra mais</a></p>
           </div>
         </div>
       </div>
@@ -95,12 +149,11 @@
               <p>Desejo receber, por e-mail, boletim de notícias da Marinho's, informações personalizadas sobre produtos e serviços, convites para eventos e pesquisas de marketing.</p>
               <p>A Marinho's (Marinho Elégance Dans Le Dessin) respeita a privacidade de seus clientes. Seus dados pessoais, obtidos por meio desta página, destinam-se à entidade Marinho selecionada e pertinente (Marinho Elégance Dans Le Dessin) para o envio de comunicações com ofertas, novidades e eventos, na gestão de seu relacionamento comercial e com o cliente. Para obter mais informações sobre o processamento de seus dados pessoais, consulte nossa política de privacidade. Você também pode solicitar o não recebimento de comunicações personalizadas sobre nossos produtos e serviços. Você pode exercer esse direito a qualquer momento, enviando-nos um aviso por meio da seção Contato em nossa política de privacidade ou usando o link “Descadastrar”, presente nos e-mails enviados pela Marinho's.</p></div>
           
-        <h2>Manipulação do DOM</h2>
+        <!--<h2>Manipulação do DOM</h2>
         <button onclick="incrementCount()">Clique Aqui</button>
-        <p>Total de Cliques:<span id="count-display">0</span></p>          
-        <script defer src="script.js"></script>   
+        <p>Total de Cliques:<span id="count-display">0</span></p> -->          
     
-        <div class="table-container">
+        <!-- <div class="table-container">
           <table>
                 <tr>
                   <th>Profession</th>
@@ -151,9 +204,9 @@
                 </tr>
 
             </table>
-          </div>
+          </div> -->
     
-    
+          <script defer src="script.js"></script>  
       </body>
     </main>
 </html>

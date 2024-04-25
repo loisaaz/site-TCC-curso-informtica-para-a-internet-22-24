@@ -26,55 +26,78 @@ main {
   font-family: Helvetica;
 }
 
-/*inicio do menu*/
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+/*início do menu*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
-.overlay-content {
+header {
+  background-color: #fff;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
 }
 
-.overlay a {
-  padding: 8px;
+.menu a {
+  color: #000;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #ffffff;
+.menu a:hover {
+  color: #FFD700; 
 }
 
-.overlay .closebtn {
+.submenu {
+  display: none;
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+.menu li:hover .submenu {
+  display: block;
+}
+.submenu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.submenu a:hover {
+ /* background-color: #f0f0f0; */
 }
 /*final do menu*/
 
@@ -156,8 +179,8 @@ a:hover {
   }
 
    /* final do vídeo */
-
-.table-container {
+/*inicio table*/
+/*.table-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,6 +201,11 @@ th, td {
 
 th {
     background-color: #fff9a7;
+}*/
+
+/*final table*/
+.descobrir {
+
 }
 
 
