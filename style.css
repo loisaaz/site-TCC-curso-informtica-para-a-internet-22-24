@@ -36,7 +36,7 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
 }
 
@@ -96,7 +96,7 @@ nav {
   padding: 5px 0;
 }
 
-.submenu a:hover {
+submenu a:hover {
  /* background-color: #f0f0f0; */
 }
 /*final do menu*/
@@ -204,8 +204,8 @@ th {
 }*/
 
 /*final table*/
-.descobrir {
 
-}
+
+
 
 
