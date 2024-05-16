@@ -13,7 +13,6 @@
       <div class="img">
         <img src="https://i.postimg.cc/6qZ2Tv1p/Black-and-White-Minimalist-Professional-Initial-Logo-1.png" width="220";/>
       </div>
-
       <a href="https://loisaaz.github.io/LayoutResponsivo2/">Layout Responsivo</a>
       <a href="https://loisaaz.github.io/ListaDeTarefas/">Lista de tarefas</a>
        
@@ -25,8 +24,6 @@
           </video>
         </div>
         </div>
-
-      
       <div class="container">
         <div class="image">
             <img src="https://i.postimg.cc/G2sZg2XX/Design-sem-nome.jpg" alt="Imagem">
@@ -34,51 +31,47 @@
         <div class="text">
             <h2>Coleção Lumiere Couture</h2>
             <p>Inspirada no estilo rococó, trazendo a elegância e sofisticação da época para o presente.<br>Com vestimentas que destacam o feminino de forma encantadora, cada peça combina o charme vintage com um toque contemporâneo.</p>
-                        <p class="descobrir"><a href="lumierecouture.html">Descubra mais</a></p>
+            <p class="descobrir"><a href="lumierecouture.html">Descubra mais</a></p>
         </div>
-    </div>
-    
+    </div> 
     <div class="container">
         <div class="text">
             <h2>Coleção Verão 2024</h2>
             <p>Descubra o prazer sublime de se vestir com peças que capturam a essência da elegância e da sofisticação, redefinindo o conceito de luxo discreto.</p>
-                        <p class="descobrir"><a href="mulheres.html">Descubra mais</a></p>
+            <p class="descobrir"><a href="mulheres.html">Descubra mais</a></p>
         </div>
         <div class="image">
             <img src="https://i.postimg.cc/wMn387z3/Design-sem-nome-2.jpg" alt="Imagem">
         </div>    
     </div>
-    
-        <p>fazer boletim de noticias e cadastro</p>
-
-        <div class="newsletter">
-          <h2>Boletim de Notícias</h2>
-          <p>Inscreva-se para receber as últimas notícias e atualizações diretamente na sua caixa de entrada.</p>
-          <form action="newsletter.php" method="post">
-              <input type="email" name="email" placeholder="Seu Email" required>
-              <button type="submit">Inscrever-se</button>
-          </form>
-      </div>
-      
-      <div class="cadastro">
-          <h2>Cadastro</h2>
-          <form action="cadastro.php" method="post">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
-      
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Seu Email" required>
-      
-              <label for="tratamento">Tratamento:</label>
-              <select id="tratamento" name="tratamento" required>
-                  <option value="senhorita">Senhorita</option>
-                  <option value="senhora">Senhora</option>
-                  <option value="senhor">Senhor</option>
-              </select>
-      
-              <button type="submit">Enviar</button>
-          </form>
-      </div>
+    <!-- Botão para Mostrar os Campos -->
+      <h2>Boletim de Notícias</h2><p>Inscreva-se para receber as últimas notícias e atualizações diretamente na sua caixa de entrada.</p>
+      <form id="newsletterForm">
+        <!-- Campo de Nome -->
+        <div id="nameField">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <!-- Campo de Tratamento -->
+        <div id="treatmentField">
+            <label for="treatment">Tratamento:</label>
+            <select id="treatment" name="treatment">
+                <option value="sra">Sra.</option>
+                <option value="srita">Srta.</option>
+                <option value="sr">Sr.</option>
+            </select>
+        </div>
+        
+        <!-- Campo de Email -->
+        <div id="emailField">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <!-- Botão para enviar -->
+        <button type="submit"><h4>Enviar</h4></button>
+    </form>
 
         <!--<h2>Manipulação do DOM</h2>
         <button onclick="incrementCount()">Clique Aqui</button>

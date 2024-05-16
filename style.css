@@ -18,7 +18,7 @@ main {
 }
 }
 
-.img {
+.img { /*Logo do Site*/
     text-align: center;
     z-index: 9999; /* Garante que a imagem esteja na frente de outros elementos */
 }
@@ -50,12 +50,12 @@ main {
 
 .text h2 {
   color: #333;
-  text-align: center; /* Centraliza o texto horizontalmente */
+  text-align: center; 
 }
 
 .text p {
-  color: #666;
-  text-align: center; /* Centraliza o texto horizontalmente */
+  color: #5a5a5a;
+  text-align: center; 
 }
 
 @media screen and (min-width: 600px) {
@@ -64,15 +64,13 @@ main {
   }
 
   .image {
-      width: 50%;
+      width: 51%;
   }
 
   .text {
       width: 50%;
   }
 }
-
-
    /* inicio do vídeo */
 
   /* Estilo para centralizar o vídeo */
@@ -124,43 +122,45 @@ main {
 /*final table*/
 
 /* BOLETIM E CADASTRO */
-.newsletter {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
-.cadastro {
-  border: 1px solid #ccc;
-  padding: 20px;
-}
+    /* Estilo para remover as bordas do formulário */
+    form {
+      width: 300px; /* Define a largura do formulário */
+      margin-left: 20px; /* Define a margem esquerda para posicionar o formulário */
+      text-align: center; /* Alinha o texto do formulário à esquerda */
+      border: none;
+  }
 
-.cadastro label {
-  display: block;
-  margin-bottom: 10px;
-}
+  /* Estilo para os campos do formulário */
+  input[type="text"], input[type="email"], select {
+      width: calc(100% - 40px); /* Ajusta a largura para compensar o padding do formulário */
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 1px solid #ccc; /* Adiciona uma linha embaixo do campo */
+      box-sizing: border-box;
+      transition: border-bottom 0.3s ease-in-out; /* Transição suave para a linha */
+  }
 
-.cadastro input[type="text"],
-.cadastro input[type="email"],
-.cadastro select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+  /* Estilo para o campo de email */
+  input[type="email"] {
+      background-color: #f9f9f9;
+  }
 
-.cadastro button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  /* Estilo para o botão */
+  button[type="submit"] {
+      background-color: transparent;
+      color: inherit; /* Usa a cor de texto padrão do elemento pai */
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  }
 
-.cadastro button:hover {
-  background-color: #45a049;
-}
-
+  /* Estilo para a linha de foco */
+  input[type="text"]:focus, input[type="email"]:focus, select:focus {
+      outline: none;
+      border-bottom: 2px solid #4CAF50; /* Altera a linha para verde quando o campo está em foco */
+  }
+  
+/* BOLETIM E CADASTRO */

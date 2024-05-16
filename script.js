@@ -7,3 +7,4 @@ function incrementCount() {
     document.getElementById("count-display").textContent = count;
 }
 /* DOM (cliques) */
+
