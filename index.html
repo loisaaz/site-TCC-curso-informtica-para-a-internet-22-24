@@ -13,6 +13,43 @@
       <div class="img">
         <img src="https://i.postimg.cc/6qZ2Tv1p/Black-and-White-Minimalist-Professional-Initial-Logo-1.png" width="220";/>
       </div>
+      
+      <!-- menu -->
+      
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#company">Company</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Mulheres<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+          <a href="vestidos.html">Camisas e Tops</a>
+          <a href="vestidos.html">Camisetas</a>
+           <a href="vestidos.html">Vestidos</a>
+          <a href="vestidos.html">Saias</a>
+          <a href="saias.html">Calças e Shorts</a>
+          <a href="shorts.html">Denim</a>
+          <a href="shorts.html">Sapatos</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Acessórios<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="joalheria.html">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+            <a href="#link4">Link 4</a>
+          </div>
+        </div>
+        <a href="#contact">Sobre Nós</a>
+      </div>
+
       <a href="https://loisaaz.github.io/LayoutResponsivo2/">Layout Responsivo</a>
       <a href="https://loisaaz.github.io/ListaDeTarefas/">Lista de tarefas</a>
        
@@ -24,6 +61,7 @@
           </video>
         </div>
         </div>
+
       <div class="container">
         <div class="image">
             <img src="https://i.postimg.cc/G2sZg2XX/Design-sem-nome.jpg" alt="Imagem">
@@ -44,35 +82,25 @@
             <img src="https://i.postimg.cc/wMn387z3/Design-sem-nome-2.jpg" alt="Imagem">
         </div>    
     </div>
-    <!-- Botão para Mostrar os Campos -->
-      <h2>Boletim de Notícias</h2><p>Inscreva-se para receber as últimas notícias e atualizações diretamente na sua caixa de entrada.</p>
-      <form id="newsletterForm">
-        <!-- Campo de Nome -->
-        <div id="nameField">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <!-- Campo de Tratamento -->
-        <div id="treatmentField">
-            <label for="treatment">Tratamento:</label>
-            <select id="treatment" name="treatment">
-                <option value="sra">Sra.</option>
-                <option value="srita">Srta.</option>
+        <div>
+          <!-- Formulário -->
+          <form id="boletimForm">
+            <h2 onclick="showForm()">Boletim de Notícias</h2>
+            <div id="formContainer" style="display: none;">
+              <input type="text" placeholder="Nome">
+              <input type="email" placeholder="Email">
+              <select>
+                <option value="" disabled selected>Tratamento</option>
                 <option value="sr">Sr.</option>
-            </select>
+                <option value="sra">Sra.</option>
+                <option value="srta">Srta.</option>
+              </select>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
-        
-        <!-- Campo de Email -->
-        <div id="emailField">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <!-- Botão para enviar -->
-        <button type="submit"><h4>Enviar</h4></button>
-    </form>
-
+        <!-- <small class="p2">↑ Clique acima para se cadastrar</small> -->
+        <p class="p3">Inscreva-se para receber as últimas notícias e atualizações diretamente na sua caixa de entrada.</p>
         <!--<h2>Manipulação do DOM</h2>
         <button onclick="incrementCount()">Clique Aqui</button>
         <p>Total de Cliques:<span id="count-display">0</span></p> -->          

@@ -1,7 +1,72 @@
 main {
   margin-left: auto;
   margin-right: auto;
+}
+  /* INÍCIO DO MENU*/
+  body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0;
+  }
   
+  .navbar {
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%); 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(255, 255, 255); /* cor de quando passa o mouse */
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 255, 255); /* cor de quando passa o mouse */
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #f8f8f8;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  /* FINAL DO MENU*/
+
   /* Exemplo de media query para telas pequenas */
 @media only screen and (max-width: 600px) {
   /* Estilos para telas pequenas */
@@ -15,7 +80,6 @@ main {
 /* Exemplo de media query para telas grandes */
 @media only screen and (min-width: 1025px) {
   /* Estilos para telas grandes */
-}
 }
 
 .img { /*Logo do Site*/
@@ -123,15 +187,15 @@ main {
 
 /* BOLETIM E CADASTRO */
 
-    /* Estilo para remover as bordas do formulário */
+    /* remover as bordas do formulário */
     form {
-      width: 300px; /* Define a largura do formulário */
+      width: 350px; /* Define a largura do formulário */
       margin-left: 20px; /* Define a margem esquerda para posicionar o formulário */
-      text-align: center; /* Alinha o texto do formulário à esquerda */
+      text-align: left; /* Alinha o texto do formulário à esquerda */
       border: none;
   }
 
-  /* Estilo para os campos do formulário */
+  /* style para os campos do formulário */
   input[type="text"], input[type="email"], select {
       width: calc(100% - 40px); /* Ajusta a largura para compensar o padding do formulário */
       padding: 12px 20px;
@@ -139,10 +203,10 @@ main {
       border: none;
       border-bottom: 1px solid #ccc; /* Adiciona uma linha embaixo do campo */
       box-sizing: border-box;
-      transition: border-bottom 0.3s ease-in-out; /* Transição suave para a linha */
+      transition: border-bottom 0.5s ease-in-out; /* Transição suave para a linha */
   }
 
-  /* Estilo para o campo de email */
+  /* style campo de email */
   input[type="email"] {
       background-color: #f9f9f9;
   }
@@ -157,12 +221,26 @@ main {
       border-radius: 5px;
   }
 
-  /* Estilo para a linha de foco */
+  /* linha de foco */
   input[type="text"]:focus, input[type="email"]:focus, select:focus {
       outline: none;
       border-bottom: 2px solid #4CAF50; /* Altera a linha para verde quando o campo está em foco */
   }
+  /*.text1 {
+    color: #333;
+    text-align: center; 
+  }*/
   
+  .p2 {
+    color: #5a5a5a;
+    text-align: center; 
+    padding: 10px;
+  }
+  .p3 {
+    color: #464646;
+    text-align: left; 
+
+  }
 /* BOLETIM E CADASTRO */
 
 
