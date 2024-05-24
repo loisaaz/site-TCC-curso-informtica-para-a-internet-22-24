@@ -70,14 +70,14 @@ section {
     background: #f2f2f2;
 }
 
-.home .cotent{
+.home .content{
     z-index: 888;
     color: #000;
     width: 70%;
     margin-top: 50px;
 }
 
-.home .cotent h1{
+.home .content h1{
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
@@ -86,16 +86,16 @@ section {
     margin-bottom: 40px;
 }
 
-.home .cotent h1 span{
+.home .content h1 span{
     font-size: 1.2em;
     font-weight: 600;
 }
 
-.home .cotent p{
+.home .content p{
     margin-bottom: 65px;
 }
 
-.home .cotent a{
+.home .content a{
     background: #000;
     padding: 15px 35px;
     color: #1680AC;
@@ -131,6 +131,28 @@ section {
 @media (max-width: 1040px) {
     header{
         padding: 15px 20px;
-        
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .home .media-icons {
+        right: 15px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    .menu-btn{
+        background: url(menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
     }
 }
