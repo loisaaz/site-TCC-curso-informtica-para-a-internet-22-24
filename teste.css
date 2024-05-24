@@ -155,4 +155,12 @@ section {
         transition: 0.3s ease;
         color: #000000;
     }
+
+    .menu-btn.active{
+        z-index: 999;
+        background: url(close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
 }
