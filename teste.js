@@ -35,3 +35,22 @@ btns.forEach((btn, i) => {
         sliderNav(i);
     });
 });
+
+// Java script das colunas
+
+let currentLink = ''; // A variável aloca o link corrente
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+  currentLink = imgs.getAttribute('data-link'); // Coloque o link na variável
+}
+
+function goToLink() {
+  if (currentLink) {
+    window.location.href = currentLink;
+  }
+}
