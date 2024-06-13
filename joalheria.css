@@ -1,0 +1,154 @@
+/*ESTILO DOS CARDS DE MULHERES
+*/
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+.product-card {
+    width: calc(50% - 10px); /* Largura do cartão, considerando o espaço entre eles */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: calc(100% - 20px); /* Ajuste para o tamanho do cartão */
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+}
+
+.product-info h3 {
+    margin: 0;
+}
+
+.product-info button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.product-info button:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 767px) {
+    .product-card {
+        width: calc(100% - 20px); /* Largura do cartão em telas pequenas */
+    }
+
+    .product-info {
+        width: 100%; /* Largura total para telas pequenas */
+    }
+}
+/*IMG COMPARADAS*/
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+   /* aparência do controle deslizante */
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Adicionado para ocupar toda a altura da tela */
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.texto {
+  padding: 20px; /* Alterado para garantir o espaçamento em todos os lados */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.texto h2 {
+    color: #333;
+    text-align: center; 
+  }
+  
+.texto p {
+    color: #5a5a5a;
+    text-align: center; 
+  }
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+  
+    .image {
+        width: 51%;
+    }
+  
+    .texto {
+        width: 50%;
+    }
+  }
+
+.titulo1{
+    text-align: center;
+}
+
+.titulo1 p{
+    color: #5a5a5a;
+}
+
+.titulo1 h1{
+    color: #333;
+}
