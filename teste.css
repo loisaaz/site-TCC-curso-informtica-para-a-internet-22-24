@@ -357,8 +357,11 @@ section {
 * {box-sizing: border-box;}
 
 .img-comp-container {
+    width: 100%;
+    max-width: 800px; /* Define largura máxima que seja adequada */
+    margin: 20px auto; /* Centraliza o slider */
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 200px;
 }
 
 .img-comp-img {
@@ -378,11 +381,12 @@ section {
   z-index:9;
   cursor: ew-resize;
    /* aparência do controle deslizante */
-  width: 40px;
-  height: 40px;
-  background-color: #2196F3;
+  width: 30px;
+  height: 30px;
+  background-color: #ebebeb;
   opacity: 0.7;
   border-radius: 50%;
+
 }
 
 .container {
@@ -490,7 +494,7 @@ input[type="submit"]:hover {
     color: red;
     font-size: 13px;
 }
-
+/* final do formulario */
 .fotos {
     display: flex;
     height: 100vh; /* Ocupa toda a altura da tela */
@@ -611,3 +615,4 @@ div[class*=box] {
     opacity: 1;
     transform: scale(1,1);
   }
+
