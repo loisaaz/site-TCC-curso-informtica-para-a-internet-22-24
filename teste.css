@@ -288,72 +288,10 @@ section {
     }
 }
 
-/*ESTILO DOS CARDS DE MULHERES
-*/
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Espaçamento entre os cartões */
-}
+/* FINAL DO MENU VÍDEOS */
 
-.product-card {
-    width: calc(50% - 10px); /* Largura do cartão, considerando o espaço entre eles */
-    position: relative;
-    overflow: hidden;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.product-card:hover img {
-    transform: scale(1.1);
-}
-
-.product-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    width: calc(100% - 20px); /* Ajuste para o tamanho do cartão */
-    transition: opacity 0.3s ease;
-    box-sizing: border-box;
-}
-
-.product-info h3 {
-    margin: 0;
-}
-
-.product-info button {
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 8px #000000;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 1px solid transparent;
-}
-
-.product-info button:hover {
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-@media screen and (max-width: 767px) {
-    .product-card {
-        width: calc(100% - 20px); /* Largura do cartão em telas pequenas */
-    }
-
-    .product-info {
-        width: 100%; /* Largura total para telas pequenas */
-    }
-}
 /*IMG COMPARADAS*/
+
 * {box-sizing: border-box;}
 
 .img-comp-container {
@@ -389,6 +327,8 @@ section {
 
 }
 
+/*IMG COMPARADAS*/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -421,19 +361,22 @@ section {
     text-align: center; 
   }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .fotos {
         flex-direction: row;
     }
   
-    .imagem {
-        width: 51%;
+    .imagee {
+        width: 50%;
     }
   
     .descricao {
         width: 50%;
     }
   }
+*/
+
+/* INÍCIO DO FORMULÁRIO */
 
 .titulo1{
     text-align: center;
@@ -495,29 +438,33 @@ input[type="submit"]:hover {
     font-size: 13px;
 }
 /* final do formulario */
+
+/* FOTOS MULHERES */
+
 .fotos {
     display: flex;
-    height: 100vh; /* Ocupa toda a altura da tela */
-}
-
-.imagee, .descricao {
-    width: 50%; /* Cada div ocupa 50% da largura da tela */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+  }
+  
+  .imagem, .descricao {
+    flex: 1 1 50%; /* Cada div ocupa 50% da largura da tela, ajusta conforme necessário */
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-.imagem {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagem {
     position: relative;
-}
-
-.imagem img {
+  }
+  
+  .imagem img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; /* Garante que a imagem cubra toda a área da div */
-}
-
-.overlay {
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -529,34 +476,53 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.imagem:hover .overlay {
+  }
+  
+  .imagem:hover .overlay {
     opacity: 1; /* Mostra o overlay ao passar o mouse */
-}
-
-.overlay img {
+  }
+  
+  .overlay img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-}
-
-.descricao {
+  }
+  
+  .descricao {
     padding: 20px; /* Alterado para garantir o espaçamento em todos os lados */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     color: #333;
-}
-
-.descobrir a {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .descobrir a {
     text-decoration: none;
     color: #000000; /* Cor do link */
-}
-
-.descobrir a:hover {
+  }
+  
+  .descobrir a:hover {
     text-decoration: underline; /* Sublinhar ao passar o mouse */
-}
+  }
+  
+  /* Media Queries para telas menores */
+  @media (max-width: 768px) {
+    .imagem, .descricao {
+      flex: 1 1 100%; /* Cada div ocupa 100% da largura da tela */
+      height: auto; /* Ajusta a altura conforme o conteúdo */
+    }
+  
+    .descricao {
+      padding: 10px; /* Menor padding em telas menores */
+    }
+  
+    .imagem img {
+      height: auto; /* Mantém a altura proporcional */
+    }
+  }
+
+/* FINAL FOTOS MULHERES*/
 
 /* Botão */
 
@@ -616,3 +582,8 @@ div[class*=box] {
     transform: scale(1,1);
   }
 
+  #section1, #section2 {
+    margin: 0; /* Retirar o espaço que o section deixa na tela */
+    padding: 0; 
+
+}
