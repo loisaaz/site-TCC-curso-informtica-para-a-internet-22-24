@@ -1,2 +1,2 @@
 # sitetcc
-desenvolvendo um site
+Desenvolvendo um site para web :)
