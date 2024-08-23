@@ -437,18 +437,25 @@ input[type="submit"]:hover {
     color: red;
     font-size: 13px;
 }
+
 /* final do formulario */
 
 /* FOTOS MULHERES */
 
+.fotos1 { /* para que o flex-wrap fique proporcional em todos */
+    display: flex;
+    flex-wrap: wrap-reverse; /* itens se movem para a linha debaixo em telas pequenas */
+    height: auto; /* ajusta a altura */
+  }
+
 .fotos {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
-    height: auto; /* Ajusta a altura conforme o conteúdo */
+    flex-wrap: wrap; /* itens se movem para a linha debaixo em telas pequenas */
+    height: auto; /* ajusta a altura */
   }
   
   .imagem, .descricao {
-    flex: 1 1 50%; /* Cada div ocupa 50% da largura da tela, ajusta conforme necessário */
+    flex: 1 1 50%; /* cada div ocupa 50% da largura da tela */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,7 +468,7 @@ input[type="submit"]:hover {
   .imagem img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Garante que a imagem cubra toda a área da div */
+    object-fit: cover; /* garante que a imagem cubra toda a div */
   }
   
   .overlay {
@@ -472,14 +479,14 @@ input[type="submit"]:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
     opacity: 0;
-    transition: opacity 0.3s ease; /* Transição suave */
+    transition: opacity 0.4s ease; /* tempo da transição entre as fotos*/
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .imagem:hover .overlay {
-    opacity: 1; /* Mostra o overlay ao passar o mouse */
+    opacity: 1; /* mostra a (foto)overlay ao passar o mouse */
   }
   
   .overlay img {
@@ -489,12 +496,12 @@ input[type="submit"]:hover {
   }
   
   .descricao {
-    padding: 20px; /* Alterado para garantir o espaçamento em todos os lados */
+    padding: 20px; /* garante o espaçamento em todos os lados */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* centraliza conteúdo verticalmente */
     color: #333;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
   }
   
   .descobrir a {
@@ -514,11 +521,11 @@ input[type="submit"]:hover {
     }
   
     .descricao {
-      padding: 10px; /* Menor padding em telas menores */
+      padding: 10px; /* padding em telas menores */
     }
   
     .imagem img {
-      height: auto; /* Mantém a altura proporcional */
+      height: auto; /* altura proporcional */
     }
   }
 
@@ -557,7 +564,7 @@ input[type="submit"]:hover {
 /* botão */
 
   #section1, #section2 {
-    margin: 0; /* Retirar o espaço que o section deixa na tela */
+    margin: 0; /* Retira o espaço que o section deixa na tela */
     padding: 0; 
 
 }
