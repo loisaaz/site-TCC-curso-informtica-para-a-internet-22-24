@@ -99,7 +99,7 @@
       color: #333;
       transition: all 0.3s ease 0s;
   }
-  .product-grid .title a:hover{ color: #0775c0; }
+  /* .product-grid .title a:hover{ color: #0775c0; } */
   .product-grid .price{
       color: #555;
       font-size: 15px;
