@@ -119,3 +119,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5; /* Para garantir que o footer fique acima do conteúdo */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
