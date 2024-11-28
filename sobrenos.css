@@ -70,3 +70,52 @@ font-size: 13px;
 }
 
 /* Final do formulario */
+
+/* Estilos gerais */
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #f9f9f9;
+    color: #5a5a5a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho e título */
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilo div aviso legal */
+.texto1 {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0c4e7a; 
+    border-right: 5px solid #0c4e7a;
+}
+
+/* Estilo do parágrafo do aviso legal */
+.texto1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Links dentro do parágrafo */
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
